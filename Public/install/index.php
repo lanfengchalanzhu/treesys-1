@@ -4,7 +4,7 @@
  */
 header('Content-type:text/html;charset=utf-8');
 // 检测是否安装过
-if (file_exists('./install.lock')) {
+if (file_exists('./lock.txt')) {
     echo '你已经安装过该系统，重新安装需要先删除./Public/install/install.lock 文件';
     die;
 }
